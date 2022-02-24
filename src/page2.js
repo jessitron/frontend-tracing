@@ -42,8 +42,10 @@ const traceId = span.spanContext().traceId; // debugging
 // end the span!!
 span.end();
 
-const team = "jessitron";
-const dataset = "frontend-tracing";
+// Now, do something clever that gives the user a link to the trace in honeycomb
+const team = "jessitron"; // change this
+const dataset = "frontend-tracing"; // change this
+
 const traceUrl =
   "https://ui.honeycomb.io/" +
   team +
