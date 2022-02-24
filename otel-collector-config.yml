@@ -3,8 +3,9 @@ receivers:
     protocols:
       grpc: # on port 4317
       http:
-        cors_allowed_origins:
-          - "https://localhost:1234"
+        cors:
+          allowed_origins:
+            - "http://localhost:1234"
         endpoint: "0.0.0.0:4318"
 
 processors:
