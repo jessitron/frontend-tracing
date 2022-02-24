@@ -27,5 +27,11 @@ To test it again, open small_data.json and change the trace ID.
 Parcel serves it, and gives you a URL.
 You should see a page with a button.
 
-Push the button to get to a different page. The time that page takes to load is measured in a trace.
+### operate the app
+
+Push the button to get to a different page. The time that page takes to load is measured in 
+a trace.
+
 It gives you a link to that trace, except in my team, so if you want that link to work, change "team" and "dataset" in page2.js
+
+(hot reloading is turned off in 'npm run build' so refresh the page if you change the code.)
