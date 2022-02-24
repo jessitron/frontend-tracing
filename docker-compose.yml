@@ -1,0 +1,12 @@
+version: "3"
+services:
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:latest
+    command: ["--config=/etc/otel-collector-config.yml"]
+    environment:
+      - HONEYCOMB_API_KEY
+    volumes:
+      - ./otel-collector-config.yml:/etc/otel-collector-config.yml
+    ports:
+      - "14268:14268" # what is this for... jaeger?
+      - "4317-4318:4317-4318" # receive traces here. 4318 is http
