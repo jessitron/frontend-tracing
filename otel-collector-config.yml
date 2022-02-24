@@ -2,7 +2,10 @@ receivers:
   otlp:
     protocols:
       grpc: # on port 4317
-      http: # on port 4318
+      http:
+        cors_allowed_origins:
+          - "https://localhost:1234"
+        endpoint: "0.0.0.0:4318"
 
 processors:
   batch:
