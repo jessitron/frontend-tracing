@@ -13,7 +13,7 @@ if (whenString) {
   const span = opentelemetry.trace
     .getTracer("my app")
     .startSpan("button pushed", {
-      startTime: numberToHrtime(when), // the terrible secret!!!!!!
+      startTime: when,
       attributes: {
         // these are all for my own troubleshooting
         futzing: 160,
