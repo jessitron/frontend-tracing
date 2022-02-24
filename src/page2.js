@@ -19,7 +19,6 @@ if (whenString) {
         futzing: 160,
         "app.comment": "converting stored time to date",
         "app.when": when,
-        "app.hrtime": JSON.stringify(numberToHrtime(when)),
         "app.my_duration": Date.now() - when,
         "app.after": Date.now(),
       },
