@@ -4,7 +4,7 @@
   "description": "## do stuff",
   "main": "index.js",
   "scripts": {
-    "build": "parcel tracing.js",
+    "build": "parcel --no-hmr src/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
